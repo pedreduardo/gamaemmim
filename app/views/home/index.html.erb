@@ -25,13 +25,13 @@
             <div class="caixa">
               <%= form_with(model: Lead.new, remote: true) do |form| %>
                 <label>
-                  Nome:</label>
+                  Nome completo:</label>
                 <%= form.text_field :name, id: :lead_name, placeholder: "Nome", class: "form-control" %>
                 <label class="label-two">
                   E-mail:</label>
                 <%= form.text_field :email, id: :lead_email, placeholder: "Email", class: "form-control" %>
             </div>
-              <%= form.submit "QUERO TRABALHAR EM UM STARTUP!" %>
+              <%= form.submit "QUERO TRABALHAR EM UMA STARTUP!" %>
               <% end %>
           </form>
         </div>
